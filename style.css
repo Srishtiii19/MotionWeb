@@ -1,0 +1,28 @@
+#scrollContainer {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;      /* Firefox */
+    }
+
+    #scrollContainer::-webkit-scrollbar {
+      display: none;             /* Webkit browsers */
+    }
+
+    #scrollContainer {
+      scroll-behavior: smooth;   /* Smooth scroll */
+    }
+
+    .word {
+      transition: all 0.5s ease;
+    }
+
+    /* When the word is in the center */
+    .word.center {
+      opacity: 1; /* Full opacity */
+      filter: blur(0); /* No blur */
+      font-weight: bold; /* Make the word bold */
+    }
+
+    /* Optional: A slight transition for opacity/blur when switching from one state to another */
+    /* .word.transition-all {
+      transition: opacity 0.5s, filter 0.5s;
+    } */

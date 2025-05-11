@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tailwind Image Cards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-500 m-0 font-sans relative">
+
+  <!-- Layer 3: Centered Overlay Text -->
+  <!-- Layer 3: Centered Overlay Text -->
+<div id="scrollContainer"
+     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20
+            w-[1000px] overflow-x-scroll whitespace-nowrap text-white text-center px-4 touch-auto scroll-smooth snap-x snap-mandatory">
+  <div class="flex w-max px-60 space-x-40">
+  <!-- First Word -->
+  <div class="w-[400px] flex items-center justify-center">
+    <span class="word snap-center text-[180px] font-sans opacity-40 blur-sm transition-all">DESIGN</span>
+  </div>
+  <!-- Second Word -->
+  <div class="w-[400px] flex items-center justify-center">
+    <span class="word snap-center text-[180px] font-sans opacity-40 blur-sm transition-all">PR</span>
+  </div>
+  <!-- Third Word -->
+  <div class="w-[400px] flex items-center justify-center">
+    <span class="word snap-center text-[180px] font-sans opacity-40 blur-sm transition-all">SOCIAL</span>
+  </div>
+</div>
+</div>
+
+
+  <!-- Layer 2: Cards -->
+  <div id="cardsContainer" class="flex justify-center gap-48 p-10 h-screen overflow-y-scroll relative z-10">
+
+    <!-- Column 1 -->
+    <div id="col1Wrapper" class="h-screen overflow-y-hidden">
+      <div id="col1" class="flex flex-col gap-20 mt-60">
+        <div class="p-0 rounded-xl">
+          <img src="images/CB img5.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/CB img2.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img8.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img11.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img13.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div id="col2Wrapper" class="h-screen overflow-y-hidden">
+      <div id="col2" class="flex flex-col gap-20">
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img10.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img7.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img9.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+        <div class="p-0 rounded-xl">
+          <img src="images/Cb img14.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
