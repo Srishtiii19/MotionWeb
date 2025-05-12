@@ -3,80 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tailwind Image Cards</title>
+  <title>Watery Website</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 </head>
 
-<body class="bg-gray-500 m-0 font-sans relative">
+<body style="background: url('images/PM1.jpeg') no-repeat center center fixed; background-size: cover;" 
+      class="m-0 font-sans relative overflow-hidden">
 
-  <!-- Layer 3: Centered Overlay Text -->
-  <!-- Layer 3: Centered Overlay Text -->
-<div id="scrollContainer"
-     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20
-            w-[1000px] overflow-x-scroll whitespace-nowrap text-white text-center px-4 touch-auto scroll-smooth snap-x snap-mandatory">
-  <div class="flex w-max px-60 space-x-40">
-  <!-- First Word -->
-  <div class="w-[400px] flex items-center justify-center">
-    <span class="word snap-center text-[180px] font-sans opacity-40 blur-sm transition-all">DESIGN</span>
+  <!-- Centered Overlay Text -->
+  <div id="scrollContainer"
+       class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20
+              w-[1000px] overflow-x-scroll whitespace-nowrap text-white text-center px-4 touch-auto scroll-smooth snap-x snap-mandatory">
+    <div class="flex w-max px-60 space-x-40">
+      <div class="w-[400px] flex items-center justify-center">
+        <span class="word snap-center text-[140px] font-sans opacity-40 blur-sm transition-all">DESIGN</span>
+      </div>
+      <div class="w-[400px] flex items-center justify-center">
+        <span class="word snap-center text-[140px] font-sans opacity-40 blur-sm transition-all">PR</span>
+      </div>
+      <div class="w-[400px] flex items-center justify-center">
+        <span class="word snap-center text-[140px] font-sans opacity-40 blur-sm transition-all">SOCIAL</span>
+      </div>
+    </div>
   </div>
-  <!-- Second Word -->
-  <div class="w-[400px] flex items-center justify-center">
-    <span class="word snap-center text-[180px] font-sans opacity-40 blur-sm transition-all">PR</span>
+  <div class="fixed top-[60%] left-1/2 transform -translate-x-1/2 text-white text-3xl z-30 mt-20">
+    SWIPE AND SELECT
   </div>
-  <!-- Third Word -->
-  <div class="w-[400px] flex items-center justify-center">
-    <span class="word snap-center text-[180px] font-sans opacity-40 blur-sm transition-all">SOCIAL</span>
-  </div>
-</div>
-</div>
 
-
-  <!-- Layer 2: Cards -->
+  <!-- Cards with Videos -->
   <div id="cardsContainer" class="flex justify-center gap-48 p-10 h-screen overflow-y-scroll relative z-10">
-
     <!-- Column 1 -->
     <div id="col1Wrapper" class="h-screen overflow-y-hidden">
-      <div id="col1" class="flex flex-col gap-20 mt-60">
-        <div class="p-0 rounded-xl">
-          <img src="images/CB img5.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/CB img2.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img8.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img11.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img13.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
+      <div id="col1" class="flex flex-col gap-20 mt-56">
+        <video src="images/CB vid1.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
+        <video src="images/CB vid2.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
+        <video src="images/CB vid3.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
+        <video src="images/CB vid4.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
       </div>
     </div>
 
     <!-- Column 2 -->
     <div id="col2Wrapper" class="h-screen overflow-y-hidden">
       <div id="col2" class="flex flex-col gap-20">
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img10.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img7.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img9.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
-        <div class="p-0 rounded-xl">
-          <img src="images/Cb img14.jpeg" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" />
-        </div>
+        <video src="images/CB vid5.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
+        <video src="images/CB vid6.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
+        <video src="images/CB vid7.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
+        <video src="images/CB vid8.mp4" class="w-[410px] h-[450px] object-cover rounded-lg brightness-50" autoplay loop muted playsinline></video>
       </div>
     </div>
-
   </div>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <!-- JavaScript for Scroll Sync and Wave Effect -->
+  <script>
+    const container = document.getElementById('scrollContainer');
+    const words = container.querySelectorAll('.word');
+    const col1Wrapper = document.getElementById('col1Wrapper');
+    const col2Wrapper = document.getElementById('col2Wrapper');
+    const col1 = document.getElementById('col1');
+    const col2 = document.getElementById('col2');
+
+    function updateCenterWord() {
+      const containerRect = container.getBoundingClientRect();
+      const containerCenter = containerRect.left + containerRect.width / 2;
+
+      words.forEach(word => {
+        const wordRect = word.getBoundingClientRect();
+        const wordCenter = wordRect.left + wordRect.width / 2;
+        const distance = Math.abs(containerCenter - wordCenter);
+
+        if (distance < 50) {
+          word.classList.remove('opacity-40', 'blur-sm');
+          word.classList.add('opacity-100', 'blur-0', 'font-sans');
+        } else {
+          word.classList.remove('opacity-100', 'blur-0', 'font-sans');
+          word.classList.add('opacity-40', 'blur-sm');
+        }
+      });
+    }
+
+    updateCenterWord();
+
+    container.addEventListener('scroll', () => {
+      requestAnimationFrame(() => {
+        updateCenterWord();
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        const scrollRatio = container.scrollLeft / maxScroll;
+        const maxCol1 = col1.scrollHeight - col1Wrapper.clientHeight;
+        const maxCol2 = col2.scrollHeight - col2Wrapper.clientHeight;
+        col1Wrapper.scrollTop = scrollRatio * maxCol1;
+        col2Wrapper.scrollTop = maxCol2 - scrollRatio * maxCol2;
+      });
+    });
+  </script>
+
+  <!-- Water Shader + Wave on Videos -->
+  <script>
+    let camera, scene, renderer, uniforms;
+
+    init();
+    animate();
+
+    function init() {
+      const container = document.body;
+
+      camera = new THREE.Camera();
+      camera.position.z = 1;
+
+      scene = new THREE.Scene();
+
+      const geometry = new THREE.PlaneGeometry(2, 2);
+
+      uniforms = {
+        time: { type: "f", value: 0.0 },
+        resolution: { type: "v2", value: new THREE.Vector2() }
+      };
+
+      const material = new THREE.ShaderMaterial({
+        uniforms: uniforms,
+        transparent: true,
+        vertexShader: `
+          varying vec2 vUv;
+          void main() {
+            vUv = uv;
+            gl_Position = vec4(position, 1.0);
+          }
+        `,
+        fragmentShader: `
+          precision highp float;
+          uniform float time;
+          uniform vec2 resolution;
+          varying vec2 vUv;
+
+          void main() {
+            float wave = sin(vUv.y * 40.0 + time * 3.0) * 0.1 +
+                         cos(vUv.x * 50.0 + time * 2.5) * 0.1;
+
+            vec3 color = vec3(0.2, 0.6, 1.0) * wave;
+            gl_FragColor = vec4(color, 0.15);
+          }
+        `
+      });
+
+      const mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+
+      renderer = new THREE.WebGLRenderer({ alpha: true });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.domElement.style.position = "fixed";
+      renderer.domElement.style.top = "0";
+      renderer.domElement.style.left = "0";
+      renderer.domElement.style.zIndex = "30";
+      renderer.domElement.style.pointerEvents = "none";
+      container.appendChild(renderer.domElement);
+
+      onWindowResize();
+      window.addEventListener('resize', onWindowResize, false);
+    }
+
+    function onWindowResize() {
+      uniforms.resolution.value.x = window.innerWidth;
+      uniforms.resolution.value.y = window.innerHeight;
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      uniforms.time.value += 0.03;
+      renderer.render(scene, camera);
+
+      // Apply wave animation to video elements
+      const waveTime = uniforms.time.value;
+      const amplitude = 20;
+      const allVideos = document.querySelectorAll('#cardsContainer video');
+
+      allVideos.forEach((vid, index) => {
+        const y = Math.sin(waveTime + index * 0.6) * amplitude;
+        vid.style.transform = `translateY(${y}px)`;
+      });
+    }
+  </script>
 </body>
 </html>
